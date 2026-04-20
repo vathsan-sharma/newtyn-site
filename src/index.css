@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+  
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-dark: var(--brand-bg);
+  --color-brand-paper: var(--brand-bg);
+  --color-brand-line: var(--brand-line);
+}
+
+@layer base {
+  :root {
+    --brand-bg: #0A0A0A;
+    --brand-accent: #D4FF00;
+    --brand-line: #1A1A1A;
+    --brand-text: #FFFFFF;
+    --brand-text-muted: rgba(255, 255, 255, 0.5);
+  }
+
+  :root.light {
+    --brand-bg: #FFFFFF;
+    --brand-accent: #000000;
+    --brand-line: #EEEEEE;
+    --brand-text: #0A0A0A;
+    --brand-text-muted: rgba(10, 10, 10, 0.5);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-brand-dark text-[color:var(--brand-text)] font-sans antialiased transition-colors duration-500;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-black uppercase tracking-tighter text-[color:var(--brand-text)];
+  }
+}
