@@ -14,7 +14,7 @@
 @layer base {
   :root {
     --brand-bg: #0A0A0A;
-    --brand-accent: #D4FF00;
+    --brand-accent: #FF5A00;
     --brand-line: #1A1A1A;
     --brand-text: #FFFFFF;
     --brand-text-muted: rgba(255, 255, 255, 0.5);
@@ -22,7 +22,7 @@
 
   :root.light {
     --brand-bg: #FFFFFF;
-    --brand-accent: #000000;
+    --brand-accent: #FF5A00;
     --brand-line: #EEEEEE;
     --brand-text: #0A0A0A;
     --brand-text-muted: rgba(10, 10, 10, 0.5);

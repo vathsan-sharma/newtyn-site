@@ -19,16 +19,19 @@ export const AMENITIES = [
 export const SPACES = [
   {
     name: 'Event Space',
+    video: 'https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8838.mov',
     image: 'https://picsum.photos/seed/netwyn-event/800/600',
     description: 'A versatile space for large gatherings and presentations.',
   },
   {
     name: 'Private Office',
+    video: 'https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8746.mov',
     image: 'https://picsum.photos/seed/netwyn-office/800/600',
     description: 'Quiet, professional environment for focused work.',
   },
   {
     name: 'Boardroom',
+    video: 'https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8818.mov',
     image: 'https://picsum.photos/seed/netwyn-boardroom/800/600',
     description: 'Equipped with latest audio and video features.',
   },
@@ -98,22 +101,46 @@ export const HOURLY_SERVICES = [
 
 export const TESTIMONIALS = [
   {
-    quote: "Netwyn Place has completely transformed how our team works. The focus and community here are unmatched in Scarborough.",
-    name: "Sarah Jenkins",
-    company: "Founder, TechFlow Systems",
-    image: "https://picsum.photos/seed/sarah/100/100"
+    quote: "I have attended six or seven business events at Netwyn Place in the past several months. I have always enjoyed the first rate hospitality of the staff and the quality of the events and presenters. Plus the food has always been very good. I look forward to attending more events in the very near future.",
+    name: "Michael Ballard",
+    company: "Business Attendee",
+    image: "https://picsum.photos/seed/ballard/100/100"
   },
   {
-    quote: "The boardroom facilities are top-notch. We host all our monthly partner meetings here and our clients are always impressed.",
-    name: "David Chen",
-    company: "Partner, NorthPoint Legal",
-    image: "https://picsum.photos/seed/david/100/100"
+    quote: "Awesome facility to conduct seminars, workshops, conferences, tv shows etc. The IT professionals are the best. They did an excellent job with my website... Monfriese Rum Cakes.",
+    name: "Christine Monfriese",
+    company: "Owner, Monfriese Rum Cakes",
+    image: "https://picsum.photos/seed/christine/100/100"
   },
   {
-    quote: "As a solopreneur, finding a space that feels professional yet welcoming was key. Netwyn is exactly that.",
-    name: "Elena Rodriguez",
-    company: "Creative Director, Studio E",
-    image: "https://picsum.photos/seed/elena/100/100"
+    quote: "Great shared office space. Also a perfect space for a mid sized event. The management is super accommodating and professional.",
+    name: "Shahzad Gidwani",
+    company: "Event Organizer",
+    image: "https://picsum.photos/seed/shahzad/100/100"
+  },
+  {
+    quote: "This place is awesome for entrepreneurs. They have seminars and temporary office rentals. If you haven’t checked it out - you should !",
+    name: "Tony Ning",
+    company: "Entrepreneur",
+    image: "https://picsum.photos/seed/tony/100/100"
+  },
+  {
+    quote: "Great place to network. I got great business leads through networking events at Netwyn Center.",
+    name: "Shahbaz Anjum",
+    company: "Leads Networker",
+    image: "https://picsum.photos/seed/shahbaz/100/100"
+  },
+  {
+    quote: "Professional space, excellent board room and very kind and generous owner. Highly recommended .",
+    name: "Linda Ross",
+    company: "Consultant / Member",
+    image: "https://picsum.photos/seed/linda/100/100"
+  },
+  {
+    quote: "Fantastic co working place. Everyone needs to check this place out. Glad to be one of the original members here.",
+    name: "Jorge Solorzano",
+    company: "Original Member",
+    image: "https://picsum.photos/seed/jorge/100/100"
   }
 ];
 

@@ -34,13 +34,26 @@ export default function Services() {
               transition={{ delay: index * 0.1 }}
               className="group cursor-pointer border border-brand-line"
             >
-              <div className="aspect-[1/1] overflow-hidden rounded-none relative grayscale group-hover:grayscale-0 transition-all duration-700">
-                <img
-                  src={space.image}
-                  alt={space.name}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
-                />
+              <div className="aspect-[1/1] overflow-hidden rounded-none relative grayscale group-hover:grayscale-0 transition-all duration-700 bg-brand-line">
+                {space.video ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  >
+                    <source src={space.video} type="video/mp4" />
+                    <source src={space.video} type="video/quicktime" />
+                  </video>
+                ) : (
+                  <img
+                    src={space.image}
+                    alt={space.name}
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                )}
                 <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/0 transition-colors" />
                 <div className="absolute bottom-6 left-6 text-white z-10">
                   <h3 className="text-3xl font-black uppercase tracking-tighter">{space.name}</h3>

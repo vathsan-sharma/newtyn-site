@@ -12,13 +12,17 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-none overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-              <img
-                src="https://picsum.photos/seed/netwyn-meeting/800/1000"
-                alt="Networking at Netwyn Place"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
+            <div className="aspect-[4/5] rounded-none overflow-hidden bg-brand-line transition-all duration-700">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              >
+                <source src="https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8744.mov" type="video/mp4" />
+                <source src="https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8744.mov" type="video/quicktime" />
+              </video>
             </div>
             <div className="absolute -bottom-8 -right-8 bg-brand-accent text-brand-dark p-16 rounded-none hidden lg:block">
               <p className="text-6xl font-black mb-2 tracking-tighter">10K</p>
@@ -35,7 +39,7 @@ export default function About() {
             <span className="text-brand-accent font-black tracking-[4px] uppercase text-[12px] mb-6 block">
               PHILOSOPHY • GROWTH
             </span>
-            <h2 className="text-6xl md:text-8xl font-black mb-10 leading-[0.8] tracking-tighter text-[color:var(--brand-text)]">
+            <h2 className="text-6xl md:text-8xl font-black mb-10 leading-[0.8] tracking-tighter text-[color:var(--brand-text)] uppercase">
               A COMMUNITY <br />
               DESIGNED TO <br />
               BREATHE.
