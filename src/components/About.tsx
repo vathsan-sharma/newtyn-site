@@ -12,13 +12,13 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-none overflow-hidden bg-brand-line transition-all duration-700">
+            <div className="aspect-[4/5] rounded-none overflow-hidden bg-brand-line-accent transition-all duration-700">
               <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover"
               >
                 <source src="https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8744.mov" type="video/mp4" />
                 <source src="https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8744.mov" type="video/quicktime" />
@@ -36,35 +36,24 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-brand-accent font-black tracking-[4px] uppercase text-[12px] mb-6 block">
-              PHILOSOPHY • GROWTH
-            </span>
             <h2 className="text-6xl md:text-8xl font-black mb-10 leading-[0.8] tracking-tighter text-[color:var(--brand-text)] uppercase">
               A COMMUNITY <br />
               DESIGNED TO <br />
               BREATHE.
             </h2>
-            <div className="space-y-8 text-[color:var(--brand-text-muted)] leading-tight uppercase font-medium text-sm max-w-lg">
+            <div className="space-y-6 text-[color:var(--brand-text-muted)] leading-relaxed text-sm max-w-lg font-medium">
               <p>
-                Netwyn Place is a coworking office space in Scarborough, built for the modern professional. 
-                coworking has become a smart solution for startups, entrepreneurs, 
-                and professionals looking for room to work, connect, and grow.
+                At Netwyn Place, work feels different.
               </p>
               <p>
-                At Netwyn Place, we welcome small businesses, entrepreneurs, professionals, and everyone 
-                in between. Reduction is the ultimate sophistication. We build environments that 
-                breathe within their context.
+                We are a 10,000 sq. ft. coworking space in Scarborough designed for entrepreneurs, small businesses, professionals, and growing teams who want more than just a desk. Here, you get a bright, modern, and professional environment where you can focus, meet clients, build your business, and feel part of a real community.
               </p>
-            </div>
-            <div className="mt-16 grid grid-cols-2 gap-8 border-t border-brand-line pt-12">
-              <div className="grid-item">
-                <h3 className="text-[11px] uppercase tracking-[1px] mb-4 opacity-50 underline underline-offset-4 decoration-brand-accent">Modern Focus</h3>
-                <p className="text-lg font-bold leading-tight uppercase text-[color:var(--brand-text)]">High-End<br />Amenities</p>
-              </div>
-              <div className="grid-item">
-                <h3 className="text-[11px] uppercase tracking-[1px] mb-4 opacity-50 underline underline-offset-4 decoration-brand-accent">Natural</h3>
-                <p className="text-lg font-bold leading-tight uppercase text-[color:var(--brand-text)]">Solarium<br />Lighting</p>
-              </div>
+              <p>
+                With natural light, flexible workspaces, high-end amenities, and a calm atmosphere away from the distractions of home, Netwyn Place gives you the space, support, and energy to do your best work every day. Whether you are starting something new or growing what you have already built, this is a place where your next step feels possible.
+              </p>
+              <p className="text-brand-accent font-black tracking-wider uppercase text-base pt-4">
+                Your next big move starts here.
+              </p>
             </div>
           </motion.div>
         </div>

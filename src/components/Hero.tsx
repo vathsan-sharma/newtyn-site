@@ -142,14 +142,11 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, cubicBezier: [0.16, 1, 0.3, 1] }}
             >
-              {/* Coordinates & Status Badges */}
+              {/* Status Badges */}
               <div className="flex flex-wrap items-center gap-4 mb-8">
                 <span className="flex items-center gap-2 bg-brand-line/60 border border-brand-line/80 px-4 py-2 text-[10px] font-bold tracking-[2px] uppercase text-[color:var(--brand-text)] backdrop-blur-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-ping" />
                   SCARBOROUGH, TORONTO
-                </span>
-                <span className="text-[10px] font-mono text-[color:var(--brand-text-muted)] tracking-widest uppercase">
-                  43.7764° N , 79.2573° W
                 </span>
               </div>
 
@@ -331,16 +328,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Modern bottom scroll visual line */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 2 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:block"
-      >
-        <span className="text-[10px] font-mono uppercase tracking-[4px] text-[color:var(--brand-text-muted)] block text-center mb-2">SCROLL TO TOURS</span>
-        <div className="w-px h-16 bg-gradient-to-b from-brand-accent to-transparent mx-auto" />
-      </motion.div>
     </section>
   );
 }

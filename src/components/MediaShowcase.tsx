@@ -31,9 +31,6 @@ export default function MediaShowcase() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
           <div className="max-w-2xl">
-            <span className="text-brand-accent font-black tracking-[4px] uppercase text-[12px] mb-6 block">
-              CINEMATIC • SHOWCASE
-            </span>
             <h2 className="text-6xl md:text-8xl font-black mb-8 leading-[0.8] tracking-tighter text-[color:var(--brand-text)]">
               ATMOSPHERE <br />
               LOOPS.
@@ -88,7 +85,6 @@ export default function MediaShowcase() {
               {/* Title Overlay */}
               <div className="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row justify-between items-end gap-6 pointer-events-none z-10">
                 <div className="max-w-xl">
-                  <span className="text-brand-accent font-bold uppercase tracking-[3px] text-[10px] mb-2 block">{currentVideo.tag}</span>
                   <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-white leading-tight">{currentVideo.title}</h3>
                   <p className="text-white/60 text-xs uppercase tracking-wide leading-relaxed mt-2">{currentVideo.description}</p>
                 </div>

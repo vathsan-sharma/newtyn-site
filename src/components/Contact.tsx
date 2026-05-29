@@ -9,9 +9,6 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-24">
           {/* Info Block */}
           <div>
-            <span className="text-brand-accent font-black tracking-[4px] uppercase text-[12px] mb-6 block">
-              LOCATION • CONNECT
-            </span>
             <h2 className="text-6xl md:text-8xl font-black text-[color:var(--brand-text)] mb-16 leading-[0.8] tracking-tighter">
               READY TO <br />
               <span className="text-brand-accent">ACTIVATE.</span>

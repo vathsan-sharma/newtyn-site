@@ -9,9 +9,6 @@ export default function Services() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start mb-24 gap-12">
           <div className="max-w-2xl">
-            <span className="text-brand-accent font-black tracking-[4px] uppercase text-[12px] mb-6 block">
-              CATALOG • ACCESS
-            </span>
             <h2 className="text-6xl md:text-8xl font-black mb-8 leading-[0.8] tracking-tighter text-[color:var(--brand-text)]">
               PRICING <br />
               MODULES.
@@ -34,7 +31,7 @@ export default function Services() {
               transition={{ delay: index * 0.1 }}
               className="group cursor-pointer border border-brand-line"
             >
-              <div className="aspect-[1/1] overflow-hidden rounded-none relative grayscale group-hover:grayscale-0 transition-all duration-700 bg-brand-line">
+              <div className="aspect-[1/1] overflow-hidden rounded-none relative transition-all duration-700 bg-brand-line">
                 {space.video ? (
                   <video
                     autoPlay
@@ -56,11 +53,11 @@ export default function Services() {
                 )}
                 <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/0 transition-colors" />
                 <div className="absolute bottom-6 left-6 text-white z-10">
-                  <h3 className="text-3xl font-black uppercase tracking-tighter">{space.name}</h3>
+                  <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">{space.name}</h3>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-[color:var(--brand-text-muted)] text-[10px] leading-tight uppercase font-bold tracking-wider">
+              <div className="p-8">
+                <p className="text-[color:var(--brand-text-muted)] group-hover:text-[color:var(--brand-text)] transition-colors text-[15px] md:text-base leading-relaxed uppercase font-black tracking-wider">
                   {space.description}
                 </p>
               </div>

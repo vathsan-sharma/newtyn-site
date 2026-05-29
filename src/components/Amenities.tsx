@@ -8,9 +8,6 @@ export default function Amenities() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start mb-24 gap-12">
           <div className="max-w-2xl">
-            <span className="text-brand-accent font-black tracking-[4px] uppercase text-[12px] mb-6 block">
-              INFRASTRUCTURE • 24/7
-            </span>
             <h2 className="text-6xl md:text-8xl font-black mb-8 leading-[0.8] tracking-tighter text-[color:var(--brand-text)]">
               PRECISION <br />
               AMENITIES.
@@ -37,7 +34,7 @@ export default function Amenities() {
                 <div className="mb-8">
                   {IconComponent && <IconComponent className="w-8 h-8 text-brand-accent group-hover:scale-110 transition-transform" />}
                 </div>
-                <h3 className="text-xs font-black tracking-[1px] text-[color:var(--brand-text-muted)] group-hover:text-brand-accent transition-colors uppercase">
+                <h3 className="text-lg md:text-xl font-bold tracking-tight text-[color:var(--brand-text)] group-hover:text-brand-accent transition-colors uppercase">
                   {amenity.name}
                 </h3>
               </motion.div>
