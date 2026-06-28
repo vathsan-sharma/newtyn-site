@@ -29,7 +29,7 @@ export default function Amenities() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="flex flex-col p-10 border-r border-b border-brand-line group hover:bg-white/5 transition-colors"
+                className="flex flex-col p-10 border-r border-b border-brand-line group hover:bg-black/[0.02] transition-colors"
               >
                 <div className="mb-8">
                   {IconComponent && <IconComponent className="w-8 h-8 text-brand-accent group-hover:scale-110 transition-transform" />}

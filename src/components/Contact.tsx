@@ -32,7 +32,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="p-12 bg-white/5 border border-brand-line group hover:border-brand-accent/30 transition-colors">
+            <div className="p-12 bg-black/[0.01] border border-brand-line group hover:border-brand-accent/30 transition-colors">
               <div className="flex items-center gap-3 mb-8">
                 <Navigation className="text-brand-accent w-6 h-6" />
                 <h4 className="font-black text-xl uppercase tracking-tighter text-[color:var(--brand-text)]">Route Logistics</h4>
@@ -56,9 +56,9 @@ export default function Contact() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="bg-brand-accent p-12 md:p-16 rounded-none text-brand-dark shadow-2xl relative"
+            className="bg-brand-accent p-12 md:p-16 rounded-none text-white shadow-2xl relative"
           >
-            <h3 className="text-4xl font-black uppercase tracking-tighter mb-12 flex flex-col leading-[0.8]">
+            <h3 className="text-4xl font-black uppercase tracking-tighter mb-12 flex flex-col leading-[0.8] text-white">
               <span>INITIALIZE</span>
               <span>CONTACT</span>
             </h3>
@@ -66,19 +66,19 @@ export default function Contact() {
             <form className="space-y-8 relative z-10" onSubmit={(e) => e.preventDefault()}>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-2">
-                  <label className="text-[10px] uppercase tracking-[2px] font-black opacity-60 italic">Identity</label>
+                  <label className="text-[10px] uppercase tracking-[2px] font-black opacity-80 italic text-white">Identity</label>
                   <input
                     type="text"
-                    className="w-full bg-brand-dark/5 border-b-2 border-brand-dark/20 px-0 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-brand-dark transition-colors placeholder:text-brand-dark/30"
+                    className="w-full bg-white/10 text-white border-b-2 border-white/20 px-0 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-white transition-colors placeholder:text-white/40"
                     placeholder="Full Name"
                     required
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] uppercase tracking-[2px] font-black opacity-60 italic">Digital Trace</label>
+                  <label className="text-[10px] uppercase tracking-[2px] font-black opacity-80 italic text-white">Digital Trace</label>
                   <input
                     type="email"
-                    className="w-full bg-brand-dark/5 border-b-2 border-brand-dark/20 px-0 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-brand-dark transition-colors placeholder:text-brand-dark/30"
+                    className="w-full bg-white/10 text-white border-b-2 border-white/20 px-0 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-white transition-colors placeholder:text-white/40"
                     placeholder="Email Address"
                     required
                   />
@@ -86,20 +86,20 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] uppercase tracking-[2px] font-black opacity-60 italic">Interest Module</label>
-                <select className="w-full bg-brand-dark/5 border-b-2 border-brand-dark/20 px-0 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-brand-dark transition-colors appearance-none cursor-pointer">
-                  <option className="bg-brand-accent">Coworking Space</option>
-                  <option className="bg-brand-accent">Private Office</option>
-                  <option className="bg-brand-accent">Event Space</option>
-                  <option className="bg-brand-accent">Virtual Office</option>
-                  <option className="bg-brand-accent">Other</option>
+                <label className="text-[10px] uppercase tracking-[2px] font-black opacity-80 italic text-white">Interest Module</label>
+                <select className="w-full bg-white/10 text-white border-b-2 border-white/20 px-2 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-white transition-colors appearance-none cursor-pointer">
+                  <option className="text-black">Coworking Space</option>
+                  <option className="text-black">Private Office</option>
+                  <option className="text-black">Event Space</option>
+                  <option className="text-black">Virtual Office</option>
+                  <option className="text-black">Other</option>
                 </select>
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] uppercase tracking-[2px] font-black opacity-60 italic">Data Payload</label>
+                <label className="text-[10px] uppercase tracking-[2px] font-black opacity-80 italic text-white">Data Payload</label>
                 <textarea
-                  className="w-full bg-brand-dark/5 border-b-2 border-brand-dark/20 px-0 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-brand-dark transition-colors h-32 resize-none placeholder:text-brand-dark/30"
+                  className="w-full bg-white/10 text-white border-b-2 border-white/20 px-0 py-3 text-sm font-bold uppercase tracking-widest focus:outline-none focus:border-white transition-colors h-32 resize-none placeholder:text-white/40"
                   placeholder="Details..."
                   required
                 />
@@ -107,7 +107,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-brand-dark text-[color:var(--brand-text)] py-6 rounded-none font-black uppercase tracking-[3px] text-xs hover:bg-white hover:text-brand-dark transition-all"
+                className="w-full bg-black text-white py-6 rounded-none font-black uppercase tracking-[3px] text-xs hover:bg-white hover:text-black hover:border-white border border-transparent transition-all"
               >
                 Execute Send
               </button>

@@ -51,13 +51,12 @@ export default function Services() {
                     referrerPolicy="no-referrer"
                   />
                 )}
-                <div className="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/0 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white z-10">
-                  <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">{space.name}</h3>
-                </div>
               </div>
               <div className="p-8">
-                <p className="text-[color:var(--brand-text-muted)] group-hover:text-[color:var(--brand-text)] transition-colors text-[15px] md:text-base leading-relaxed uppercase font-black tracking-wider">
+                <h4 className="text-xl font-black uppercase tracking-tighter text-[color:var(--brand-text)] mb-3">
+                  {space.name}
+                </h4>
+                <p className="text-[color:var(--brand-text-muted)] group-hover:text-[color:var(--brand-text)] transition-colors text-[13px] leading-relaxed uppercase font-black tracking-wider">
                   {space.description}
                 </p>
               </div>
@@ -78,8 +77,8 @@ export default function Services() {
                 className={cn(
                   'flex flex-col p-8 border-r border-b border-brand-line transition-all duration-300 h-full rounded-none',
                   plan.highlight 
-                    ? 'bg-brand-accent text-brand-dark' 
-                    : 'bg-transparent text-[color:var(--brand-text)] group hover:bg-white/5'
+                    ? 'bg-brand-accent text-white' 
+                    : 'bg-transparent text-[color:var(--brand-text)] group hover:bg-black/[0.02]'
                 )}
               >
                 <div className="mb-12">
@@ -103,8 +102,8 @@ export default function Services() {
                   className={cn(
                     'w-full py-4 rounded-none text-xs font-black uppercase tracking-widest transition-all border',
                     plan.highlight
-                      ? 'bg-brand-dark text-white border-brand-dark hover:bg-white hover:text-brand-dark'
-                      : 'bg-white text-brand-dark border-white hover:bg-brand-accent hover:border-brand-accent hover:text-brand-dark'
+                      ? 'bg-white text-brand-accent border-white hover:bg-black hover:text-white hover:border-black'
+                      : 'bg-transparent text-black border-black/10 hover:bg-black hover:text-white hover:border-black'
                   )}
                 >
                   Join Tier
@@ -115,7 +114,7 @@ export default function Services() {
         </div>
 
         {/* Hourly/Other Services Grid */}
-        <div className="bg-white/5 p-12 md:p-20 border border-brand-line">
+        <div className="bg-black/[0.01] p-12 md:p-20 border border-brand-line">
           <h3 className="text-2xl font-black uppercase tracking-tighter mb-16 text-center text-brand-accent underline underline-offset-8 decoration-brand-accent">Additional Modules</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-0 border-l border-t border-brand-line/50">
             {HOURLY_SERVICES.map((service, index) => (
@@ -125,7 +124,7 @@ export default function Services() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="flex items-center justify-between p-8 border-r border-b border-brand-line/50 group hover:bg-white/5 transition-colors"
+                className="flex items-center justify-between p-8 border-r border-b border-brand-line/50 group hover:bg-black/[0.02] transition-colors"
               >
                 <span className="text-[11px] font-black uppercase tracking-widest text-[color:var(--brand-text-muted)] group-hover:text-[color:var(--brand-text)] transition-colors">{service.name}</span>
                 <span className="text-sm font-black text-brand-accent">{service.price}</span>

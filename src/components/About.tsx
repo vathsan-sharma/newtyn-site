@@ -13,16 +13,12 @@ export default function About() {
             className="relative"
           >
             <div className="aspect-[4/5] rounded-none overflow-hidden bg-brand-line-accent transition-all duration-700">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800&h=1000"
+                alt="Netwyn Place Premium Coworking Community"
                 className="w-full h-full object-cover"
-              >
-                <source src="https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8744.mov" type="video/mp4" />
-                <source src="https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8744.mov" type="video/quicktime" />
-              </video>
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div className="absolute -bottom-8 -right-8 bg-brand-accent text-brand-dark p-16 rounded-none hidden lg:block">
               <p className="text-6xl font-black mb-2 tracking-tighter">10K</p>

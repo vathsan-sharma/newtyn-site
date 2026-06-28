@@ -25,7 +25,7 @@ export const SPACES = [
   },
   {
     name: 'Private Office',
-    video: 'https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8746.mov',
+    video: 'https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/IMG_8744.mov',
     image: 'https://picsum.photos/seed/netwyn-office/800/600',
     description: 'Quiet, professional environment for focused work.',
   },

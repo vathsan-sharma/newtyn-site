@@ -10,7 +10,7 @@ export default function Testimonials() {
           <div className="max-w-2xl">
             <h2 className="text-6xl md:text-8xl font-black mb-8 leading-[0.8] tracking-tighter text-[color:var(--brand-text)]">
               CLIENT <br />
-              SYNERGY.
+              VOICES.
             </h2>
           </div>
           <p className="text-[color:var(--brand-text-muted)] md:max-w-xs text-xs uppercase font-medium leading-tight">
@@ -27,7 +27,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-12 border-r border-b border-brand-line flex flex-col group hover:bg-white/5 transition-colors"
+              className="p-12 border-r border-b border-brand-line flex flex-col group hover:bg-black/[0.02] transition-colors"
             >
               <Quote className="text-brand-accent w-10 h-10 mb-8 opacity-20 group-hover:opacity-100 transition-opacity" />
               <p className="text-xl font-bold uppercase tracking-tight mb-12 text-[color:var(--brand-text)] leading-tight italic">

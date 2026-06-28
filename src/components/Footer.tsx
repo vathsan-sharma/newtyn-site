@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 items-center gap-12 text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start">
-            <div className="bg-white p-1.5 rounded-none dark:bg-transparent dark:p-0">
+            <div className="bg-white p-1.5 rounded-none border border-brand-line">
               <img 
                 src="https://raw.githubusercontent.com/vathsan-sharma/netwyn-images/main/Netwyn%20Logo%20-%20Final%20.jpg" 
                 alt="Netwyn Place"
-                className="h-12 w-auto object-contain mix-blend-multiply dark:invert dark:mix-blend-screen"
+                className="h-12 w-auto object-contain mix-blend-multiply"
                 referrerPolicy="no-referrer"
               />
             </div>

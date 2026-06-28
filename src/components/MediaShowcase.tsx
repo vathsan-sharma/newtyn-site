@@ -32,8 +32,8 @@ export default function MediaShowcase() {
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
           <div className="max-w-2xl">
             <h2 className="text-6xl md:text-8xl font-black mb-8 leading-[0.8] tracking-tighter text-[color:var(--brand-text)]">
-              ATMOSPHERE <br />
-              LOOPS.
+              EXPERIENCE THE <br />
+              ATMOSPHERE.
             </h2>
           </div>
           <p className="text-[color:var(--brand-text-muted)] md:max-w-xs text-xs uppercase font-medium leading-tight pt-2">
@@ -80,25 +80,16 @@ export default function MediaShowcase() {
                 <source src={currentVideo.videoUrl} type="video/mp4" />
                 <source src={currentVideo.videoUrl} type="video/quicktime" />
               </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-60 pointer-events-none" />
 
-              {/* Title Overlay */}
-              <div className="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row justify-between items-end gap-6 pointer-events-none z-10">
-                <div className="max-w-xl">
-                  <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-white leading-tight">{currentVideo.title}</h3>
-                  <p className="text-white/60 text-xs uppercase tracking-wide leading-relaxed mt-2">{currentVideo.description}</p>
-                </div>
-                
-                {/* Audio controls */}
-                <div className="flex gap-3 pointer-events-auto">
-                  <button
-                    onClick={() => setIsMuted(!isMuted)}
-                    className="p-4 bg-brand-dark/80 text-white hover:bg-brand-accent hover:text-brand-dark transition-all duration-300 pointer-events-auto border border-white/10"
-                    aria-label={isMuted ? 'Unmute' : 'Mute'}
-                  >
-                    {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
-                  </button>
-                </div>
+              {/* Audio controls absolutely positioned in the corner without obstructing gradient or text */}
+              <div className="absolute bottom-6 right-6 z-20 pointer-events-auto">
+                <button
+                  onClick={() => setIsMuted(!isMuted)}
+                  className="p-4 bg-black/60 text-white hover:bg-brand-accent hover:text-black transition-all duration-300 border border-white/10 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm"
+                  aria-label={isMuted ? 'Unmute' : 'Mute'}
+                >
+                  {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
+                </button>
               </div>
             </motion.div>
           </AnimatePresence>

@@ -13,19 +13,11 @@
 
 @layer base {
   :root {
-    --brand-bg: #0A0A0A;
-    --brand-accent: #FF5A00;
-    --brand-line: #1A1A1A;
-    --brand-text: #FFFFFF;
-    --brand-text-muted: rgba(255, 255, 255, 0.5);
-  }
-
-  :root.light {
     --brand-bg: #FFFFFF;
     --brand-accent: #FF5A00;
-    --brand-line: #EEEEEE;
-    --brand-text: #0A0A0A;
-    --brand-text-muted: rgba(10, 10, 10, 0.5);
+    --brand-line: #E2E8F0;
+    --brand-text: #0F172A;
+    --brand-text-muted: rgba(15, 23, 42, 0.6);
   }
 
   html {
